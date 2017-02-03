@@ -3,6 +3,21 @@
 <head>
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGF2dnlrIiwiYSI6ImNpeW1vNnJxNzAwMHQzM3BndHM1OXZhbnoifQ.nW8fpsXA6FHQTeY2dcOYkg';
+// This adds the map to your page
+var map = new mapboxgl.Map({
+  // container id specified in the HTML
+  container: 'map',
+  // style URL
+  style: 'mapbox://styles/mapbox/light-v9',
+  // initial position in [long, lat] format
+  center: [-77.034084, 38.909671],
+  // initial zoom
+  zoom: 14
+});
+
+
 <style>
 body {
   background: #404040;
